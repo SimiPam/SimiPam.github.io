@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+
+img.a
+{
+width: 25px;
+height: 25px;
+}
+
+img.spec
+{
+width: 55px;
+height: 20px;
+}
+
+#menu
+{
+
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba (255, 209, 220, 0.9);
+z-index: +1;
+}
+#menuitem
+{
+left: 0;
+}
+ul 
+{
+list-style: none; /* Remove list bullets */
+padding-top: 5px ;
+margin: 0;
+height:100%;
+
+overflow: hidden;
+background-color:rgba(0, 0, 0,0.8 );
+z-index:+2;
+
+}
+li
+{
+list-style: none; /* Remove list bullets */
+padding: 5px;
+margin: 0;
+display: inline-block;
+	
+}
+
+
+
+
+
+/* unvisited link */
+a.mens {
+   
+	text-decoration: none;
+	background-color: light green;
+    color: black;
+    border: 2px black;
+	border-radius: 0;
+    padding:10px 10px;
+    text-align: center;
+	
+    
+    display: inline-block;
+}
+
+/* visited link */
+a.mens:visited  {
+    color: purple;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a.mens:hover  {
+    color: grey;
+	background-color: rgba(0,0,0,0.9);
+	text-decoration: none;
+	font-family:monospace;
+	font-size: 18px;
+	
+	border-bottom: 2px black;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li .a:hover, .b:hover  {
+    background-color:rgba(248, 242, 242, 1);
+}
+
+li.dropdown {
+    display: inline-block;
+	
+}
+
+.dropdown-content {
+    display: none;
+	left:0;
+	width:15%;
+    position: absolute;
+    background-color: rgba(255, 255, 255,0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 25px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+	margin:0;
+	
+	width:100%;
+	overflow:hidden;
+	
+}
+
+#img1 {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%; }
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */ 
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+p.ray
+{
+padding-left:120px;
+padding-top:45px;
+padding-bottom:10px;
+padding-right:60px;
+
+line-height: 150%;
+letter-spacing: 1px;
+
+}
+
+p.roy
+{
+padding-left:120px;
+
+padding-bottom:20px;
+padding-right:60px;
+
+line-height: 150%;
+letter-spacing: 1px;
+}
+
+p.sun
+{
+padding-left:160px;
+font-style: italic;
+padding-bottom:10px;
+padding-right:120px;
+
+line-height: 150%;
+letter-spacing: 1px;
+text-align: center;
+}
+
+p.kin
+{
+padding-left:160px;
+font-style: italic;
+
+padding-right:80px;
+
+line-height: 150%;
+letter-spacing: 1px;
+text-align: center;
+padding-bottom:10px;
+}
+
+h1.text2
+{
+font-size: 600%;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: lighter;
+font-variant: small-caps;
+padding-left:190px;
+text-shadow: 5px 2px #262626;
+}
+
+h4.text3
+{
+font-size: 100%;
+color:black;
+font-style: normal;
+font-weight: lighter;
+font-family: Georgia, serif;
+text-shadow: 1px 0px #262626;
+font-variant: small-caps;
+letter-spacing: 1px;
+padding-left:200px;
+}
+
+.mids
+{
+background-image: url("../images/ev4.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+width:100%;
+heigth: auto;
+
+
+}
+
+
+
+.asid
+{
+padding-top: 60px;
+}
+
+.cover
+{
+width:80%;
+float: right;
+border: 2px black;
+color: black;
+box-shadow:0px 8px 16px 0px rgba(0,0,0,0.9);
+background-color:rgba(242, 242, 242, 0.9);
+}
+</style>
+</head>
+<body>
+
+ <div id="menu"> 
+<div id="menuitem">
+<ul>
+<li class="dropdown"> 
+<a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/index.html" class="drop"> <img class="a"  src="../images/men.jpg" alt="menu">
+</a>
+<div class="dropdown-content">
+
+ <a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/bio.html"> About
+</a>
+
+ <a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/resume.html"> Resume
+</a>
+
+ <a class="mens" href="file:///C:/Users/hp/Desktop/contact.html"> Contact   </a>
+
+<a class="mens" href="https://twitter.com/SimiPam_"> 
+<img class="a"  src="../images/twitter-512.gif" alt="twitter">
+ </a>
+
+
+<a class="mens" href="https://www.instagram.com/simipam_/"> 
+<img class="a" src="../images/inst.png" alt="instagram"> 
+</a>
+
+<a class="mens" href="https://www.facebook.com/profile.php?id=100010690998665">  
+<img class="a" src="../images/facebook-512.png" alt="facebook"> 
+</a>
+
+<a class="mens" href="https://github.com/SimiPam"> 
+<img class="spec" src="../images/GitHub-Logo.png" alt="github">
+</a>
+
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="mids">
+<div class="col-3 right">
+  <div class="asid">
+    
+  </div>
+</div>
+
+<div class="col-9">
+
+  <h1 class="text2">
+About Ev
+</h1>
+<h4 class="text3">
+Success is in the Eyes of the Beholder
+</h4>
+<div class="cover">
+  <p class="ray">
+Evanss Brown is a Christ lover, food lover, student, professional dishwasher and part-time sleeper.
+</p>
+<p class="sun">
+  "This earth is not my home i am simply a stranger passing by to add flavour and a little spice to the lives of everyone i encouter on this journey that i call my life. i was created with a purpose."
+</p>
+<p class="roy">
+Evanss is currently pursuing his bachelors degree in Computing at The University Of Northampton. He is the holder of an O-levels degree certificate and an international foundation degree certicate. At the moment he is in his first year. He has attained several scholary awards such as Best overall student in Achievers college which was his high school and again the same award in his Foundation degree. Evanss is an African. A Proud Black Man.
+</p>
+<p class="roy">
+He is not only trainig himself in order to pursue his dream white collar job, he is also a part time, self taught, hairsttylist. Having mastered this art up to an expert level in its various forms."
+</p>
+<p class="kin">
+"But for me to live is Christ and to die is gain"
+</p>
+<div class="col-3"> 
+     <img id="center1" src="images/image5.JPG">
+	</div>
+<div class="col-3"> 
+     <img id="left1" src="images/Video.gif"> 
+</div>
+<div class="col-3"> 
+     <video id="right1" controls> 
+	<source src="images/Video2.mp4" type="video/mp4"> 
+     </video>
+</div>
+
+</div>
+
+</div>
+<div class="row">
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>

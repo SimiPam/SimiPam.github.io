@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+
+.rest
+{
+width:100%;
+background-color:white;
+height:100%;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+ 
+}
+
+
+.footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+	margin:0;
+	
+	width:100%;
+	overflow:hidden;
+	
+}
+h1.text1
+{
+font-size: 500%;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: lighter;
+font-variant: small-caps;
+
+
+text-shadow: 2px 2px #b8b894;
+}
+
+
+
+
+#img1 {
+    width: 100%;
+    height: auto;
+		
+    
+}
+
+
+
+img.a
+{
+width: 25px;
+height: 25px;
+}
+
+img.spec
+{
+width: 55px;
+height: 20px;
+}
+
+#menu
+{
+
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba (255, 209, 220, 0.9);
+z-index: +1;
+}
+#menuitem
+{
+left: 0;
+}
+ul 
+{
+list-style: none; /* Remove list bullets */
+padding-top: 5px ;
+margin: 0;
+height:100%;
+
+overflow: hidden;
+background-color:rgba(0, 0, 0,0.8 );
+z-index:+2;
+
+}
+li
+{
+list-style: none; /* Remove list bullets */
+padding: 5px;
+margin: 0;
+display: inline-block;
+	
+}
+
+
+
+
+
+/* unvisited link */
+a.mens {
+   
+	text-decoration: none;
+	background-color: light green;
+    color: black;
+    border: 2px black;
+	border-radius: 0;
+    padding:10px 10px;
+    text-align: center;
+	
+    
+    display: inline-block;
+}
+
+/* visited link */
+a.mens:visited  {
+    color: purple;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a.mens:hover  {
+    color: grey;
+	background-color: rgba(0,0,0,0.9);
+	text-decoration: none;
+	font-family:monospace;
+	font-size: 18px;
+	
+	border-bottom: 2px black;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li .a:hover, .b:hover  {
+    background-color:rgba(248, 242, 242, 1);
+}
+
+li.dropdown {
+    display: inline-block;
+	
+}
+
+.dropdown-content {
+    display: none;
+	left:0;
+	width:15%;
+    position: absolute;
+    background-color: rgba(255, 255, 255,0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 25px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.under
+{
+margin:0;
+padding:0;
+width:100%;
+overflow:hidden;
+}
+
+</style>
+</head>
+<body>
+
+<div class="rest">
+
+
+  <div id="menu"> 
+<div id="menuitem">
+<ul>
+<li class="dropdown"> 
+<a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/index.html" class="drop"> <img class="a"  src="../images/men.jpg" alt="menu">
+</a>
+<div class="dropdown-content">
+
+ <a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/bio.html"> About
+</a>
+
+ <a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/resume.html"> Resume
+</a>
+
+ <a class="mens" href="file:///C:/Users/hp/Desktop/contact.html"> Contact   </a>
+
+<a class="mens" href="https://twitter.com/SimiPam_"> 
+<img class="a"  src="../images/twitter-512.gif" alt="twitter">
+ </a>
+
+
+<a class="mens" href="https://www.instagram.com/simipam_/"> 
+<img class="a" src="../images/inst.png" alt="instagram"> 
+</a>
+
+<a class="mens" href="https://www.facebook.com/profile.php?id=100010690998665">  
+<img class="a" src="../images/facebook-512.png" alt="facebook"> 
+</a>
+
+<a class="mens" href="https://github.com/SimiPam"> 
+<img class="spec" src="../images/GitHub-Logo.png" alt="github">
+</a>
+
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+
+
+<div class="under">
+<img id="img1" src="../images/ev19 - Copy.jpg">
+</div>
+</div>
+
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
