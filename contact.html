@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Rock+Salt|Mate+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
     box-sizing: border-box;
+	
 }
 .row::after {
     content: "";
@@ -14,7 +15,8 @@
 }
 [class*="col-"] {
     float: left;
-    padding: 20px;
+    padding-left: 60px;
+	padding-top:50px;
 }
 html {
     font-family: 'Merriweather', serif;
@@ -27,33 +29,20 @@ background-attachment:fixed;
 
 }
 
-
-img.a
-{
-width: 25px;
-height: 25px;
+img.map
+{	
+	width:100%;
+	height:auto;
+	float:left;
+	padding-bottom:20px;
 }
-
-img.c
-{
-width:35px;
-height: 35px;
-}
-
-img.spec
-{
-width: 55px;
-height: 20px;
-}
-
 #menu
 {
-
 position:fixed;
 top: 0;
 left: 0;
 width: 100%;
-
+background-color: rgb (255, 209, 220);
 z-index: +1;
 }
 #menuitem
@@ -78,20 +67,19 @@ list-style: none; /* Remove list bullets */
 padding: 5px;
 margin: 0;
 display: inline-block;
+
+
+	
 }
 
-
-
-
-/* unvisited link */
 a.mens {
    
 	text-decoration: none;
-	background-color: light green;
+	
     color: black;
     border: 2px black;
 	border-radius: 0;
-    padding:10px 10px;
+    padding:;
     text-align: center;
 	
     
@@ -107,12 +95,11 @@ a.mens:visited  {
 /* mouse over link */
 a.mens:hover  {
     color: grey;
-	background-color: rgba(0,0,0,0.9);
 	text-decoration: none;
 	
 	font-size: 85%;
-	
 	border-bottom: 2px black;
+	background-color: rgba(0,0,0,0.9);
 }
 
 
@@ -126,7 +113,10 @@ li a, .dropbtn {
 
 
 
-
+li.dropdown {
+    display: inline-block;
+	
+}
 
 .dropdown-content {
     display: none;
@@ -153,10 +143,114 @@ li a, .dropbtn {
     display: block;
 }
 
+img.a
+{
+width: 25px;
+height: 25px;
+}
+
+img.spec
+{
+width: 55px;
+height: 20px;
+}
+
+
+form {
+    width: 80%;
+	margin: 15px;
+	display:inline-block;
+    flex-direction: column;
+    
+	float:right;
+	float:right;
+	padding-top:80px;
+}
+
+label 
+{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	text-align: right;
+	margin: 7px 5px;
+	
+}
 
 
 
 
+input[type=text]
+{
+	background-color: #f8f8f8;
+	width: 70%;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    outline: none;
+	display: flex;
+	
+}
+
+input[type=text]:focus 
+{   
+    border: 1px solid #555;
+	background-color:white;
+}
+textarea {
+    width: 70%;
+    height: 170px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    outline: none;
+    display: flex;
+    background-color: #f8f8f8;
+    font-size: 16px;
+	 margin: 10px 5px;
+    
+}
+textarea:focus 
+{
+    border: 1px solid #555;
+	background-color:white;
+}
+
+input[type=submit], input[type=reset] 
+{
+    background-color: rgba(214, 214, 194, 0.4);
+    border: 1.5px solid rgb(0,0,0);
+	
+	font-weight: lighter;
+	box-shadow: 0.5px 0.5px 0.5px #2e2e1f;
+    color: black;
+    padding: 9px 20px;
+    text-decoration: none;
+    margin: 4px 5px;
+    cursor: pointer;
+	border-radius:0px;
+	float: left;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+	}
+	
+	
+input[type=submit]:hover,
+input[type=reset]:hover 
+	{
+	color: grey;
+	text-decoration: none;
+	font-size:80%;
+	
+	border-bottom: 2px black;
+	background-color: rgba(0,0,0,0.9);
+	}
+	
+	
 .footer {
     background-color: black;
     color: #ffffff;
@@ -164,17 +258,12 @@ li a, .dropbtn {
     font-size: 12px;
     padding: 15px;
 	margin:0;
-	z-index:+1;
+	
 	width:100%;
 	overflow:hidden;
 	
 }
 
-#img1 {
-    width: 100%;
-    height: auto;
-    
-}
 
 /* For desktop: */
 .col-1 {width: 8.33%;}
@@ -183,7 +272,7 @@ li a, .dropbtn {
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
-.col-7 {width: 58.33%; }
+.col-7 {width: 58.33%;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
@@ -194,159 +283,72 @@ li a, .dropbtn {
     /* For mobile phones: */ 
     [class*="col-"] {
         width: 100%;
-		padding:0px;
+		padding-left:5px;
     }
-	.asid
-	{
-	padding-top:0px;
-	}
-	.text2
-	{
-	text-size:300%;
 	
-	}
-	p.roy2
-	{
-	text-size:100%;
-	}
+	
 }
 
-p.ray
+h1
 {
-padding-left:30px;
-padding-top:45px;
-padding-bottom:10px;
-padding-right:30px;
+font-size:270%;
+color:black;
 
-line-height: 150%;
-letter-spacing: 1px;
+font-weight: lighter;
 
-}
-
-p.roy
-{
-padding-left:30px;
-
-padding-bottom:20px;
-padding-right:30px;
-
-line-height: 150%;
-letter-spacing: 1px;
-}
-
-p.roy2
-{
-
-padding-left:10px;
-font-family: 'Rock Salt', cursive;
-padding-bottom:20px;
-padding-right:30px;
-float:right;
-font-weight: thick;
-font-size:200%;
-letter-spacing: 1px;
-}
-
-
-
-p.sun
-{
-padding-left:40px;
-font-style: italic;
-padding-bottom:10px;
-padding-right:40px;
-
-line-height: 150%;
-letter-spacing: 1px;
-text-align: center;
-}
-
-p.kin
-{
-
-font-style: italic;
-
-
-
-line-height: 150%;
-letter-spacing: 1px;
-text-align: center;
-padding-bottom:10px;
-}
-
-h1.text2
-{
-font-size: 600%;
-font-family: 'Mate SC', serif;
-font-style: normal;
-
+text-shadow: 1px 0px #262626;
 font-variant: small-caps;
-float:left;
-text-shadow: 2px 2px #262626;
-position:auto;
-
-}
-h4
-{
-text-align:center;
-}
-
-
-.mids
-{
-
-background-repeat: no-repeat;
-background-size:cover;
-background-attachment:fixed;
-width:100%;
-heigth: auto;
-
-
-}
-
-#center1
-{
-width:220px;
-height:200px;
-}
-#left1
-{
-width:100%;
-height:240px;
-}
-.asid
-{
-padding-top:70px;
-}
-
-#tabs
-{
-
-padding:20px;
+letter-spacing: 1px;
 float:left;
 }
 
+h3
 
-.cover
 {
-width:100%;
+font-size:140%;
+color:black;
 
-float: left;
-border: 2px black;
-color: black;
-box-shadow:0px 8px 16px 0px rgba(0,0,0,0.9);
-background-color:rgba(242, 242, 242, 0.9);
-}
+font-weight: lighter;
 
-#img2
-{
-width:100%;
-heigth: 100%;
+text-shadow: 1px 0px #262626;
+font-variant: small-caps;
+letter-spacing: 1px;
+float:left;
+
 }
 
 p.b
 {
+font-size: 100%;
+color:black;
+
+font-weight: lighter;
+
+text-align:left;
+float:left;
+letter-spacing: 1px;
+
+}
+
+p
+{
 color:white;
+text-align:center;
+}
+
+
+
+#tabs
+{
+
+padding-bottom:10px;
+float:left;
+}
+
+img.c
+{
+width:35px;
+height: 35px;
 }
 
 #foot2
@@ -362,19 +364,21 @@ z-index:+1;
 left:0;
 }
 
+
 </style>
 </head>
 <body>
 
- <div id="menu"> 
+<div id="menu"> 
 <div id="menuitem">
 <ul>
 <li class="dropdown"> 
-<a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/index.html" class="drop"> <img class="a"  src="../images/men.jpg" alt="menu">
+<a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/index.html" class="drop"> <img class="a"  src="../images/men.jpg" alt="menu">  
 </a>
 <div class="dropdown-content">
 
- <a class="mens" href="../html/index.html" class="drop"> Home
+
+<a class="mens" href="../html/index.html" class="drop"> Home
 </a>
 
  <a class="mens" href="../html/bio.html"> About
@@ -389,9 +393,11 @@ left:0;
 <img class="a"  src="../images/twitter-512.gif" alt="twitter">
  </a>
 
+
 <a class="mens" href="https://www.instagram.com/evanss___/"> 
 <img class="a" src="../images/inst.png" alt="instagram"> 
 </a>
+
 
 <a class="mens" href="https://github.com/SimiPam"> 
 <img class="spec" src="../images/GitHub-Logo.png" alt="github">
@@ -404,50 +410,22 @@ left:0;
 </div>
 </div>
 
-
 <div class="row">
 
-
-<div class="col-8">
-
-  <h1 class="text2">
-About Ev
-</h1>
-
-<div class="cover">
-  <p class="ray">
-Evanss Brown is a Jesus junkie, food lover, student, professional dishwasher and part-time sleeper.
-</p>
-<p class="sun">
-  "This earth is not my home i am simply a stranger passing by to add flavour and a little spice to the lives of everyone i encouter on this journey that i call my life. i was created with a purpose."
-</p>
-<p class="roy">
-Evanss is currently pursuing his bachelors degree in Computing at The University Of Northampton. He is the holder of an O-levels degree certificate and an international foundation degree certicate. At the moment he is in his first year. He has attained several scholary awards such as Best overall student in Achievers college which was his high school and again the same award in his Foundation degree. Evanss is an African. A Proud Black Man.
-</p>
-<p class="roy">
-He is not only trainig himself in order to pursue his dream white collar job, he is also a part time, self taught, hairsttylist. Having mastered this art up to an expert level in its various forms."
-</p>
-<p class="kin">
-"But for me to live is Christ and to die is gain"
-</p>
-
-<p class="roy2">  Evans Brown. </p>
-
-<hr>
-
-</div>
-
-</div>
-
-<div class="mids">
-<div class="col-4 right">
+<div class="col-4 menu">
+  <div id="ivy">
+<h1>Contact Me Today</h1>
+<p class="b"> Feel free to drop a message regarding any curious thought on your mind, for a friendly hello or most importantly regarding business services and education opportunities  </p>
 
 
-  <div class="asid">
-    <img id="img2" src="../images/jr.png" alt="evans">
-  </div>
-  
-  <div id="tabs">
+
+
+<h3>Contact Information</h3>
+
+<p class="b">Attn: Evans Brown<br> Evanssbrown.com <br> 498 Race Course St. Kingsbury, PA 19808 <br> evanss12@gmail.com </p>
+
+
+<div id="tabs">
   
 <a class="mens" href="https://twitter.com/EVANSS___"> 
 <img class="c"  src="../images/tcir.png" alt="twitter">
@@ -459,35 +437,61 @@ He is not only trainig himself in order to pursue his dream white collar job, he
 </a>
 
 
-</a>
 
 <a class="mens" href="https://github.com/SimiPam"> 
 <img class="c" src="../images/gcir.png" alt="github">
 </a>
   </div>
   
+  <img  src="../images/nn.png" class="map" alt="bob">
 </div>
-
-
-<div class="row">
-
-
-
-
 
 
 </div>
 
 
 
+<div class="col-8 right">
+  <div id="fom">
+<form action="mailto:simipamdachomo@gmail.com" method="post" enctype="text/plain">
+
+<div id="formup">
+<label class="fname">First Name</label>
+<div class="in">
+ <input type="text" name="name" size="50" placeholder="E.g.John  ">
+ </div>
+ 
+ <label class="fname">Last Name</label>
+ <div class="in2">
+ <input type="text" name="name" size="50" placeholder="E.g.Doe ">
+ </div>
+ </div>
+ <div id="formd">
+<label class="email">Email</label>
+ <div class="down">
+ <input type="text" name="email" size="50" placeholder="123example@provider.com">
+</div> 
+
+ 
+ <label class="text">Message</label>
+ <div class="mess">
+ <textarea name="message" rows="10" cols="52">  Drop Your Text here! </textarea> 
+ </div>
+ 
+ <br />
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</div>
+
+</form>
 </div>
 </div>
 
 
 
+</div>
 <div id="foot2">
 <div id="foot1">
-
 <div class="footer">
   
 <ul >
@@ -518,6 +522,7 @@ He is not only trainig himself in order to pursue his dream white collar job, he
 <img class="a" src="../images/download.png" alt="instagram"> 
 </a>
 </li>
+
 <li>
 <a class="fems" href="https://github.com/SimiPam"> 
 <img class="a" src="../images/GitHub-Mark.png" alt="github">
@@ -530,8 +535,9 @@ He is not only trainig himself in order to pursue his dream white collar job, he
 
 
 
-
-  <p class="b">© 2016 Evans Brown.</p>
+<div id="sit">
+  <p >© 2016 Evans Brown.</p>
+  </div>
 </div>
 </div>
 </div>

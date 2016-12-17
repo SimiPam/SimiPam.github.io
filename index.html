@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
+<style>
+body
+{
+background-image: url("../images/jl.jpg");
+background-attachment:fixed;
+
+}
 
 
 .rest
@@ -21,11 +27,12 @@ height:100%;
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    
 }
 html {
-    font-family: "Lucida Sans", sans-serif;
-}
+ font-family: 'Merriweather', serif;
+   
+   }
 .header {
  
 }
@@ -36,6 +43,7 @@ html {
     color: #ffffff;
     text-align: center;
     font-size: 12px;
+	
     padding: 15px;
 	margin:0;
 	
@@ -46,7 +54,7 @@ html {
 h1.text1
 {
 font-size: 500%;
-font-family: Georgia, serif;
+
 font-style: normal;
 font-weight: lighter;
 font-variant: small-caps;
@@ -144,8 +152,8 @@ a.mens:hover  {
     color: grey;
 	background-color: rgba(0,0,0,0.9);
 	text-decoration: none;
-	font-family:monospace;
-	font-size: 18px;
+	
+	font-size: 85%;
 	
 	border-bottom: 2px black;
 }
@@ -157,7 +165,7 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li .a:hover, .b:hover  {
+li .:hover, .b:hover  {
     background-color:rgba(248, 242, 242, 1);
 }
 
@@ -179,7 +187,7 @@ li.dropdown {
 
 .dropdown-content a {
     color: black;
-    padding: 25px 15px;
+    padding: 15px 15px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -191,12 +199,85 @@ li.dropdown {
     display: block;
 }
 
-.under
+
+
+p
 {
-margin:0;
-padding:0;
+color:white;
+}
+
+
+.con {
+    background-color: rgba(214, 214, 194, 0.4);
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    padding: 25px;
+	margin:0;
+	
+	width:100%;
+	overflow:hidden;
+}
+
+a.cons
+ 
+{
+   
+    
+    
+    padding-left: 20px ;
+	padding-right:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+   margin:  4px;
+    font-size: 17px;
+    
+    cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+	
+    color: black;
+    border: 2px solid black;
+	
+	
+	box-shadow: 0.5px 0.5px 0.5px #2e2e1f;
+}
+
+
+	
+	
+	
+	
+	
+	
+
+/* mouse over link */
+a.cons:hover  {
+    color: grey;
+	text-decoration: none;
+	
+	font-size:120%;
+	border-bottom: 2px black;
+	background-color: rgba(0,0,0,0.9);
+	
+}
+
+
+#foot2
+{
+position:absolute;
+left:0;
 width:100%;
-overflow:hidden;
+z-index:+1;
+
+}
+#foot1
+{
+left:0px;
+top:0px;
 }
 
 </style>
@@ -214,25 +295,24 @@ overflow:hidden;
 </a>
 <div class="dropdown-content">
 
- <a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/bio.html"> About
+<a class="mens" href="../html/index.html" class="drop"> Home
 </a>
 
- <a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/resume.html"> Resume
+ <a class="mens" href="../html/bio.html"> About
 </a>
 
- <a class="mens" href="file:///C:/Users/hp/Desktop/contact.html"> Contact   </a>
+ <a class="mens" href="../html/resume.html"> Resume
+</a>
 
-<a class="mens" href="https://twitter.com/SimiPam_"> 
+ <a class="mens" href="../html/contact.html"> Contact   </a>
+
+ 
+<a class="mens" href="https://twitter.com/EVANSS___"> 
 <img class="a"  src="../images/twitter-512.gif" alt="twitter">
  </a>
 
-
-<a class="mens" href="https://www.instagram.com/simipam_/"> 
+<a class="mens" href="https://www.instagram.com/evanss___/"> 
 <img class="a" src="../images/inst.png" alt="instagram"> 
-</a>
-
-<a class="mens" href="https://www.facebook.com/profile.php?id=100010690998665">  
-<img class="a" src="../images/facebook-512.png" alt="facebook"> 
 </a>
 
 <a class="mens" href="https://github.com/SimiPam"> 
@@ -251,11 +331,67 @@ overflow:hidden;
 <img id="img1" src="../images/ev19 - Copy.jpg">
 </div>
 </div>
+<div id="foot2">
+<div id="foot1">
 
+<div class="con">
+ 
+ <a class="cons" href="../html/bio.html"> About ME
+</a>
 
-<div class="footer">
-  <p>Resize the browser window to see how the content respond to the resizing.</p>
+ <a class="cons" href="../html/resume.html"> Resume
+</a>
+
 </div>
 
+<div class="footer">
+  <div class="lower">
+<ul >
+<li > 
+<a class="fems" href="../html/index.html" class="drop"> Home
+</a>
+</li>
+<li>
+
+ <a class="fems" href="../html/bio.html"> About
+</a>
+</li>
+<li>
+ <a class="fems" href="../html/resume.html"> Resume
+</a>
+</li>
+<li>
+ <a class="fems" href="../html/contact.html"> Contact   </a>
+</li>
+<li>
+<a class="fems" href="https://twitter.com/EVANSS___"> 
+<img class="a"  src="../images/twi.jpg" alt="twitter">
+ </a>
+</li>
+<li>
+
+<a class="fems" href="https://www.instagram.com/evanss___/"> 
+<img class="a" src="../images/download.png" alt="instagram"> 
+</a>
+</li>
+<li>
+<a class="fems" href="https://github.com/SimiPam"> 
+<img class="a" src="../images/GitHub-Mark.png" alt="github">
+</a>
+
+
+</li>
+
+</ul>
+
+
+</div>
+
+
+  <p >© 2016 Evans Brown.</p>
+  
+</div>
+</div>
+</div>
 </body>
 </html>
