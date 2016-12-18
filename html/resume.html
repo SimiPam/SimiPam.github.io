@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+     padding-left: 60px;
+	padding-top:70px;
+}
+html {
+   font-family: 'Merriweather', serif;
+   
+}
+
+body
+{
+background-image: url("../images/jl.jpg");
+background-attachment:fixed;
+
+}
+
+img.a
+{
+width: 25px;
+height: 25px;
+}
+
+img.spec
+{
+width: 55px;
+height: 20px;
+}
+
+#menu
+{
+
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+
+z-index: +1;
+}
+#menuitem
+{
+left: 0;
+}
+ul 
+{
+list-style: none; /* Remove list bullets */
+padding-top: 5px ;
+margin: 0;
+height:100%;
+
+overflow: hidden;
+background-color:rgba(0, 0, 0,0.8 );
+z-index:+2;
+
+}
+li
+{
+list-style: none; /* Remove list bullets */
+padding: 5px;
+margin: 0;
+display: inline-block;
+	
+}
+
+
+
+
+
+/* unvisited link */
+a.mens {
+   
+	text-decoration: none;
+	background-color: light green;
+    color: black;
+    border: 2px black;
+	border-radius: 0;
+    padding:10px 10px;
+    text-align: center;
+	
+    
+    display: inline-block;
+}
+
+/* visited link */
+a.mens:visited  {
+    color: purple;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a.mens:hover  {
+    color: grey;
+	background-color: rgba(0,0,0,0.9);
+	text-decoration: none;
+	
+	font-size: 90%;
+	
+	border-bottom: 2px black;
+}
+
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+
+
+.dropdown-content {
+    display: none;
+	left:0;
+	width:15%;
+    position: absolute;
+    background-color: rgba(255, 255, 255,0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+a.cons
+ 
+{
+   
+    
+    
+    padding-left: 20px ;
+	padding-right:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+	width: 20%;
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 16px;
+    
+    cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+	
+    color: black;
+    border: 2px solid black;
+	
+	font-weight: lighter;
+	box-shadow: 0.5px 0.5px 0.5px #2e2e1f;
+}
+
+
+	
+	
+	
+	
+	
+	
+
+/* mouse over link */
+a.cons:hover  {
+    color: grey;
+	text-decoration: none;
+	
+	font-size:120%;
+	border-bottom: 2px black;
+	background-color: rgba(0,0,0,0.9);
+	
+}
+
+
+
+
+.con {
+    background-color: rgba(214, 214, 194, 0.4);
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    padding: 25px;
+	margin:0;
+	
+	width:100%;
+	overflow:hidden;
+}
+
+.footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+	z-index:+1;
+    padding: 15px;
+	margin:0;
+	
+	width:100%;
+	overflow:hidden;
+	
+}
+
+#img1 {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */ 
+    [class*="col-"] {
+        width: 100%;
+		padding-top:50px;
+    }
+	
+	
+}
+
+dt.red
+{
+color:red;
+font-size: 115%;
+
+font-style: normal;
+
+
+line-height:20px;
+font-variant: small-caps;
+letter-spacing: 1px;
+padding-bottom:8px;
+
+}
+dt.norm
+{
+font-size:100%
+color:gray;
+
+line-height:20px;
+
+letter-spacing: 1px;
+padding-bottom:5px;
+}
+h3
+{
+
+
+line-height:20px;
+font-variant: small-caps;
+letter-spacing: 1px;
+}
+h2
+{
+
+padding-bottom:10px;
+line-height:20px;
+font-variant: small-caps;
+letter-spacing: 1px;
+}
+
+#img1
+{
+width:290px;
+height:250px;
+}
+
+.wrapt
+{
+width: 70%;
+}
+
+.wrapt2
+{
+width: 60%;
+padding-top:70px;
+}
+
+a.fems {
+   
+	text-decoration: none;
+	background-color: light green;
+    color: white;
+   
+    padding:10px 10px;
+    text-align: center;
+	
+    
+    display: inline-block;
+}
+
+
+p.b
+{
+color:white;
+}
+
+#tabs
+{
+
+padding-top:20px;
+
+}
+
+img.c
+{
+width:35px;
+height: 35px;
+}
+
+#foot2
+{
+position:absolute;
+left:0;
+width:100%;
+z-index:+1;
+
+}
+#foot1
+{
+left:0;
+}
+
+</style>
+</head>
+<body>
+
+<div id="menu"> 
+<div id="menuitem">
+<ul>
+<li class="dropdown"> 
+<a class="mens" href="file:///C:/Users/hp/Desktop/web%20dev%20ass/html/index.html" class="drop"> <img class="a"  src="../images/men.jpg" alt="menu">
+</a>
+<div class="dropdown-content">
+
+<a class="mens" href="../html/index.html" class="drop"> Home
+</a>
+
+ <a class="mens" href="../html/bio.html"> About
+</a>
+
+ <a class="mens" href="../html/resume.html"> Resume
+</a>
+
+ <a class="mens" href="../html/contact.html"> Contact   </a>
+
+<a class="mens" href="https://twitter.com/EVANSS___"> 
+<img class="a"  src="../images/twitter-512.gif" alt="twitter">
+ </a>
+
+<a class="mens" href="https://www.instagram.com/evanss___/"> 
+<img class="a" src="../images/inst.png" alt="instagram"> 
+</a>
+
+<a class="mens" href="https://github.com/SimiPam"> 
+<img class="spec" src="../images/GitHub-Logo.png" alt="github">
+</a>
+
+</div>
+</li>
+
+</ul>
+</div>
+</div>
+
+
+
+
+<div class="row">
+
+<div class="col-4 menu">
+
+  <h3>Profile</h3>
+  
+<img id="img1" src="../images/je.png">
+
+
+<h2> Evans Brown</h2>
+  
+</div>
+
+<div class="col-8">
+  <div class="wrapt2">
+  <dl>
+  <dt class="red">Summary</dt>
+  <dt class="norm">To commit my energy and skills towards the achievements of the vision and mission statements of the organization through harmonized team-work while ensuring the development of interpersonal skills in order to enhance overall productivity.</dt>
+  </dl>
+  </div>
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-4 menu">
+  <h3>Education</h3>
+  
+</div>
+
+<div class="col-8">
+ <div class="wrapt">  <dl>
+  <dt class="red">Lagoon Secondary School, Nigeria (2008-2013)
+
+</dt>
+<dt class="red">Crane College, Nigeria (2013-2014) 
+</dt>
+  <dt class="norm">	O Level Certificate (WASSCE) (2014)</dt>
+  <dt class="norm"> O Level Certificate (WASSCE) (2014)
+(Mathematics B, English C, Economics B, Biology B, Physics D)
+</dt>
+  <dt class="red">Edulink International Campus(2015-2016)
+</dt>
+  <dt class="norm">	International Foundation Degree (2015-2016)</dt>
+  <dt class="red">Northampton University (2016-2019)
+</dt>
+  <dt class="norm">	Bsc Hons Computing(2016-2019)</dt>
+  </dl>
+  </div > 
+</div>
+<hr>
+</div>
+
+
+
+<div class="row">
+
+<div class="col-4 menu">
+  <h3>Current Coursework</h3>
+</div>
+
+<div class="col-8">
+  <div class="wrapt"> 
+  <dl>
+  <dt class="red"> First Year</dt>
+  <dt class="norm">Computer communication</dt>
+   <dt class="norm">Programming and problem solving</dt>
+   <dt class="norm">Database</dt>
+  <dt class="norm">Web Development</dt>
+   <dt class="norm">Software Engineering </dt>
+   </dl>
+   </div>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-4"> 
+  <h3>   Technologies</h3>
+</div>
+
+<div class="col-8"> 
+  <div class="wrapt"> 
+  <dl>
+	<dt class="red">Competent</dt>
+	<dt class="norm">HTML5/CSS</dt>
+	<dt class="norm">Java</dt>
+	<dt class="norm">JavaScript</dt>
+	<dt class="norm">Responsive Layout and Design</dt>
+	<dt class="norm">Photoshop / Sketch</dt>
+	</dl>
+	</div>
+	</div>
+
+<hr>
+</div>
+
+
+<div class="row">
+
+<div class="col-4 menu">
+  <h3> Proffessional Experience</h3>
+</div>
+
+<div class="col-8">
+  <div class="wrapt"> 
+  <dl>
+  <dt class="red">Home Lesson Teacher (2014)</dt>
+  <dt class="norm">Private extra lessons for primary and secondary school children </dt>
+<dt class="red">Intern (2016 - Present)</dt>
+<dt class="norm"> Square Mobile </dt>
+</dl>
+</div>
+</div>
+<hr>
+</div>
+
+<div class="row">
+
+<div class="col-4 menu">
+  <h3>Skills & Activities</h3>
+</div>
+
+<div class="col-8">
+  <div class="wrapt"> 
+  <dl>	
+  <dt class="norm">Good computer skills</dt>
+	<dt class="norm">Quick learner</dt>
+<dt class="norm">Eagerness and willingness to learn and work</dt>
+<dt class="norm">Team working skills</dt>
+<dt class="norm">Excellent communication and listening skills</dt>
+<dt class="norm">Diplomacy skills</dt>
+<dt class="norm">Presentation skills</dt>
+</dl>
+</div>
+</div>
+<hr>
+</div>
+ 
+ 
+ 
+ <div class="row">
+
+<div class="col-4 menu">
+  <h3>Interests</h3>
+</div>
+
+<div class="col-8">
+  <dl>
+  <dt class="norm">Reading</dt>
+  <dt class="norm">Dancing</dt>
+  <dt class="norm">Hair weaving </dt> 
+  <dt class="norm">Writing</dt>
+  </dl>
+</div>
+<hr>
+</div>
+ 
+ 
+ 
+ <div class="row">
+
+<div class="col-4 menu">
+ <h3> Awards</h3>
+</div>
+
+<div class="col-8">
+  <div class="wrapt"> 
+  <dl>
+  <dt  class="red">Best Performer In Computing (November, 2016)</dt>
+  <dt class="norm">Edulink International Campus</dt>
+  <dt class="red">Best In Math & English (2014)</dt>
+    <dt class="norm">Crane College</dt>
+ <dt  class="red"> Best Overall Student(2014)</dt>
+    <dt class="norm">Crane College</dt>
+	</dl>
+	</div>
+</div>
+</div>
+ 
+<br>
+
+</div>
+
+<div id="foot2">
+<div id="foot1">
+
+<div class="con">
+  <h2 class="b">I'm Available For Work! Get To Know More</h2>
+ <a class="cons" href="../html/contact.html"> Contact Me Today!
+</a>
+
+ <div id="tabs">
+  
+<a class="mens" href="https://twitter.com/EVANSS___"> 
+<img class="c"  src="../images/tcir.png" alt="twitter">
+ </a>
+
+
+<a class="mens" href="https://www.instagram.com/evanss___/"> 
+<img class="c" src="../images/icir.png" alt="instagram"> 
+</a>
+
+<a class="mens" href="https://github.com/SimiPam"> 
+<img class="c" src="../images/gcir.png" alt="github">
+</a>
+  </div>
+  
+  
+</div>
+
+
+<div class="footer">
+  
+<ul >
+<li > 
+<a class="fems" href="../html/index.html" class="drop"> Home
+</a>
+</li>
+<li>
+
+ <a class="fems" href="../html/bio.html"> About
+</a>
+</li>
+<li>
+ <a class="fems" href="../html/resume.html"> Resume
+</a>
+</li>
+<li>
+ <a class="fems" href="../html/contact.html"> Contact   </a>
+</li>
+<li>
+<a class="fems" href="https://twitter.com/EVANSS___"> 
+<img class="a"  src="../images/twi.jpg" alt="twitter">
+ </a>
+</li>
+<li>
+
+<a class="fems" href="https://www.instagram.com/evanss___/"> 
+<img class="a" src="../images/download.png" alt="instagram"> 
+</a>
+</li>
+<li>
+<a class="fems" href="https://github.com/SimiPam"> 
+<img class="a" src="../images/GitHub-Mark.png" alt="github">
+</a>
+
+
+</li>
+
+</ul>
+
+
+
+
+
+  <p class="b">© 2016 Evans Brown.</p>
+  
+</div>
+</div>
+</div>
+</body>
+</html>
