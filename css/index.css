@@ -130,7 +130,7 @@ position:fixed;
 top: 0;
 left: 0;
 width: 100%;
-background-color: rgba (255, 209, 220, 0.9);
+
 z-index: +1;
 }
 #menuitem
@@ -155,9 +155,7 @@ list-style: none; /* Remove list bullets */
 padding: 5px;
 margin: 0;
 display: inline-block;
-	
 }
-
 
 
 
@@ -193,6 +191,8 @@ a.mens:hover  {
 	
 	border-bottom: 2px black;
 }
+
+
 li a, .dropbtn {
     display: inline-block;
     color: white;
@@ -201,14 +201,9 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li .:hover, .b:hover  {
-    background-color:rgba(248, 242, 242, 1);
-}
 
-li.dropdown {
-    display: inline-block;
-	
-}
+
+
 
 .dropdown-content {
     display: none;
@@ -235,10 +230,9 @@ li.dropdown {
     display: block;
 }
 
+
 h2
 {
-
-
 
 color:black;
 font-family: 'Mate SC', serif;
