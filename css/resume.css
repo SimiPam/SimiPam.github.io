@@ -222,11 +222,7 @@ a.cons:hover  {
 	
 }
 
-#img1 {
-    width: 100%;
-    height: auto;
-    
-}
+
 
 /* For desktop: */
 .col-1 {width: 8.33%;}
@@ -296,7 +292,7 @@ letter-spacing: 1px;
 #img1
 {
 width:290px;
-height:250px;
+height:auto;
 }
 
 .wrapt
