@@ -1,4 +1,7 @@
-/*bio page stylesheet*/
+
+/*Student Number: BCS1620588F*/
+/*Student Name: Simi Pam Dachomo*/
+/*bio page stylesheet	*/
 
 /*to border box entire page*/
 * {
@@ -264,7 +267,7 @@ letter-spacing: 1px;
 text-align: center;
 padding-bottom:10px;
 }
-
+/*heading for about ev*/
 h1.text2
 {
 font-size: 600%;
