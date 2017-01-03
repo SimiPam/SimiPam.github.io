@@ -84,7 +84,7 @@ display: inline-block;
 a.mens {
    
 	text-decoration: none;
-	background-color: light green;
+
     color: black;
     border: 2px black;
 	border-radius: 0;
@@ -265,7 +265,7 @@ padding-bottom:8px;
 }
 dt.norm
 {
-font-size:100%
+font-size:100%;
 color:gray;
 
 line-height:20px;
@@ -310,7 +310,7 @@ padding-top:70px;
 a.fems {
    
 	text-decoration: none;
-	background-color: light green;
+
     color: white;
    
     padding:10px 10px;
