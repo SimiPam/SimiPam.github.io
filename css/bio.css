@@ -89,7 +89,7 @@ display: inline-block;
 a.mens {
    
 	text-decoration: none;
-	background-color: light green;
+	
     color: black;
     border: 2px black;
 	border-radius: 0;
@@ -240,7 +240,7 @@ font-family: 'Rock Salt', cursive;
 padding-bottom:20px;
 padding-right:30px;
 float:right;
-font-weight: thick;
+
 font-size:200%;
 letter-spacing: 1px;
 }
@@ -277,7 +277,7 @@ font-style: normal;
 font-variant: small-caps;
 float:left;
 text-shadow: 2px 2px #262626;
-position:auto;
+
 
 }
 h4
@@ -292,7 +292,7 @@ background-repeat: no-repeat;
 background-size:cover;
 background-attachment:fixed;
 width:100%;
-heigth: auto;
+
 }
 
 #center1
@@ -331,7 +331,7 @@ background-color:rgba(242, 242, 242, 0.9);
 #img2
 {
 width:100%;
-heigth: 100%;
+
 }
 
 p.b
