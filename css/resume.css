@@ -272,8 +272,34 @@ letter-spacing: 1px;
 padding-bottom:8px;
 
 }
+  /* adjust the dt list, make color blue */
+dt.red
+{
+color:#66b3ff;
+font-size: 115%;
+
+font-style: normal;
+
+
+line-height:20px;
+font-variant: small-caps;
+letter-spacing: 1px;
+padding-bottom:8px;
+
+}
   /* adjust the font in the dd list */
 dd.norm
+{
+font-size:100%;
+
+
+line-height:20px;
+
+letter-spacing: 1px;
+padding-bottom:5px;
+}
+ /* adjust the font in the dt list */
+dt.norm
 {
 font-size:100%;
 
