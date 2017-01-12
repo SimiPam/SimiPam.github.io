@@ -1,45 +1,66 @@
 /*Student Number: BCS1620588F*/
 /*Student Name: Simi Pam Dachomo*/
 /*contact page style sheet*/
+
+
+/*to border box entire page*/
 * {
     box-sizing: border-box;
-	
 }
-.row::after {
+/*to insert content and control layout after each row*/
+.part::after {
     content: "";
     clear: both;
     display: block;
 }
+/*menu icon size and color change */
+.material-icons
+{
+	font-size:30px;
+	color:white;
+}
+/*stlye for all col class for columns*/
+
 [class*="col-"] {
     float: left;
     padding-left: 60px;
 	padding-top:50px;
 }
+/*setting text for entire page*/
 html {
-    font-family: 'Merriweather', serif;
+   font-family: 'Merriweather', serif;
+   
 }
-
+/*setting background for entire page*/
 body
 {
 background-image: url("../images/jl.jpg");
 background-attachment:fixed;
 
 }
-
-img.map
-{	
-	width:100%;
-	height:auto;
-	float:left;
-	padding-bottom:20px;
+/*all social media link icons*/
+img.a
+{
+width: 25px;
+height: 25px;
 }
+/*github icon*/
+img.spec
+{
+width: 55px;
+height: 20px;
+}
+
+/*header container*/
+
 #menu
 {
+
 position:fixed;
 top: 0;
 left: 0;
 width: 100%;
-background-color: rgb (255, 209, 220);
+
 z-index: +1;
 }
 #menuitem
@@ -54,6 +75,7 @@ margin: 0;
 height:100%;
 
 overflow: hidden;
+/*setting translucent background*/
 background-color:rgba(0, 0, 0,0.8 );
 z-index:+2;
 
@@ -64,19 +86,20 @@ list-style: none; /* Remove list bullets */
 padding: 5px;
 margin: 0;
 display: inline-block;
-
-
-	
 }
 
+
+
+
+/* unvisited link */
 a.mens {
    
 	text-decoration: none;
-	
+	\
     color: black;
     border: 2px black;
 	border-radius: 0;
-    padding:;
+    padding:10px 10px;
     text-align: center;
 	
     
@@ -92,15 +115,16 @@ a.mens:visited  {
 /* mouse over link */
 a.mens:hover  {
     color: grey;
+	background-color: rgba(0,0,0,0.9);
 	text-decoration: none;
 	
 	font-size: 85%;
+	
 	border-bottom: 2px black;
-	background-color: rgba(0,0,0,0.9);
 }
 
 
-li a, .dropbtn {
+li a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -110,49 +134,37 @@ li a, .dropbtn {
 
 
 
-li.dropdown {
-    display: inline-block;
-	
-}
 
-.dropdown-content {
+/*dropdown menu*/
+.menucontent {
     display: none;
 	left:0;
 	width:15%;
     position: absolute;
-    background-color: rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255,0.8);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	
 }
-
-.dropdown-content a {
+/*dropdown content*/
+.menucontent a {
     color: black;
-    padding: 15px 15px;
+    padding: 25px 25px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
-/* mouse over link */
-.dropdown-content a:hover {background-color: #f1f1f1}
-/* mouse over link */
-.dropdown:hover .dropdown-content {
+/*hovering style of the menu content live here*/
+.menucontent a:hover {background-color: #f1f1f1}
+
+.menu1:hover .menucontent {
     display: block;
 }
 
-img.a
-{
-width: 25px;
-height: 25px;
-}
-
-img.spec
-{
-width: 55px;
-height: 20px;
-}
 
 
+
+/*form adjustments*/
 form {
     width: 80%;
 	margin: 15px;
@@ -164,6 +176,7 @@ form {
 	padding-top:80px;
 }
 
+/*label settings*/
 label 
 {
     width: 20%;
@@ -178,6 +191,7 @@ label
 
 
 
+/*font settings that displays hints in placeholder in text box, box adjustments*/
 input[type=text]
 {
 	background-color: #f8f8f8;
@@ -192,11 +206,13 @@ input[type=text]
 	
 }
 
+/*changes after box has been clicked on*/
 input[type=text]:focus 
 {   
     border: 1px solid #555;
 	background-color:white;
 }
+/*font in textare, area adjustments*/
 textarea {
     width: 70%;
     height: 170px;
@@ -211,12 +227,13 @@ textarea {
 	 margin: 10px 5px;
     
 }
+/*changes after box has been clicked on*/
 textarea:focus 
 {
     border: 1px solid #555;
 	background-color:white;
 }
-
+/*form buttons settings*/
 input[type=submit], input[type=reset] 
 {
     background-color: rgba(214, 214, 194, 0.4);
@@ -234,7 +251,7 @@ input[type=submit], input[type=reset]
 	-webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 	}
-	
+	/*changes after mouse has been placed on button*/
 	/* mouse over link */
 input[type=submit]:hover,
 input[type=reset]:hover 
@@ -247,7 +264,7 @@ input[type=reset]:hover
 	background-color: rgba(0,0,0,0.9);
 	}
 	
-	
+	/*footer container*/
 .footer {
     background-color: black;
     color: #ffffff;
@@ -262,6 +279,7 @@ input[type=reset]:hover
 }
 
 
+/*making page responsive*/
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -281,11 +299,12 @@ input[type=reset]:hover
     [class*="col-"] {
         width: 100%;
 		padding-left:5px;
+		padding-top:30px;
     }
 	
 	
 }
-
+/*major heading, page title*/
 h1
 {
 font-size:270%;
@@ -298,7 +317,7 @@ font-variant: small-caps;
 letter-spacing: 1px;
 float:left;
 }
-
+/*second heading in page*/
 h3
 
 {
@@ -313,7 +332,7 @@ letter-spacing: 1px;
 float:left;
 
 }
-
+/*font adjustments for text in first column of middle row*/
 p.b
 {
 font-size: 100%;
@@ -326,7 +345,7 @@ float:left;
 letter-spacing: 1px;
 
 }
-
+/*all texts in p tag */
 p
 {
 color:white;
@@ -334,20 +353,20 @@ text-align:center;
 }
 
 
-
+/*adjusting social media container*/
 #tabs
 {
 
 padding-bottom:10px;
 float:left;
 }
-
+/* adjustingall social media link icons below large image in tabs div*/
 img.c
 {
 width:35px;
 height: 35px;
 }
-
+/*to remove the white line demacation of the footer from the sides*/
 #foot2
 {
 position:absolute;
@@ -359,4 +378,15 @@ z-index:+1;
 #foot1
 {
 left:0;
+}
+
+/*map adjustments*/
+iframe
+{	
+	frameborder="0";
+	style="border:0";
+	width:80%;
+	height:auto;
+	float:left;
+	padding-bottom:10px;
 }

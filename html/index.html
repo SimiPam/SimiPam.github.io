@@ -6,29 +6,39 @@
 <title>
 EvansHomePage
 </title>
-<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Mate+SC" rel="stylesheet">
-
+<!--google font api-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Mate+SC" rel="stylesheet">
+<!--viewport-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--menu icon google api-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+<!--css file -->
 <link rel = "stylesheet"
    type = "text/css"
    href = "../css/index.css" />
+<!--css file for the header when the height of the screen is less than 600 -->
+	<link rel = "stylesheet"
+   type = "text/css"
+   href = "../css/headeri.css" media="screen and (max-height:600px)">
+
+
 </head>
 <body>
-
-<div class="rest">
-
-
+<!--header div -->
   <div id="menu"> 
 <div id="menuitem">
+<!--menu icon-->
 <ul>
-<li class="dropdown"> 
-<a class="mens" href="../html/index.html" class="drop"> <img class="a"  src="../images/men.jpg" alt="menu">
+<li class="menu1"> 
+<!-- menu icons-->
+<a class="mens" href="../html/index.html" > <i class="material-icons">menu</i> 
 </a>
-<div class="dropdown-content">
+<!--menu content-->
+<div class="menucontent">
 
-<a class="mens" href="../html/index.html" class="drop"> Home
+<a class="mens" href="../html/index.html" > Home
 </a>
 
  <a class="mens" href="../html/bio.html"> About
@@ -58,41 +68,43 @@ EvansHomePage
 </ul>
 </div>
 </div>
+<!--first row-->
+<div class="part">
 
-
-<div class="under">
-<div class="col-12">
-<div id="name">
- <h2 class="b"> Evans Brown</h2>
-</div>
-</div>
-
-<img id="img1" alt="Evans" src="../images/ev24.jpg">
-
-</div>
-</div>
-<div id="foot2">
-<div id="foot1">
-
-<div class="col -12">
-<div class="con">
-
- 
+<div id="mid">
+		<div class="col-1"></div>
+		<div class="col-5">
+		<!--name-->
+		<div class="work">
+			<h1 class="xxlarge"><span> Evans Brown</span></h1>
+			<p class="large">Aspiring Software Engineer</p>
+<!--resume and bio buttons-->			 
  <div id="s1">
  <a class="cons" href="../html/bio.html"> About ME
 </a>
-</div>
-<div id="s2">
+
+
  <a class="cons1" href="../html/resume.html"> Resume
 </a>
 
 </div>
+		
+		</div>
+		</div>
+	</div>
+
+
+
+
 </div>
+<!--footer container-->
+<div  id="foot2">
+<div id="foot1">
 <div class="footer">
-  <div class="lower">
+  
 <ul >
 <li > 
-<a class="fems" href="../html/index.html" class="drop"> Home
+<a class="fems" href="../html/index.html" > Home
 </a>
 </li>
 <li>
@@ -118,6 +130,7 @@ EvansHomePage
 <img class="a" src="../images/download.png" alt="instagram"> 
 </a>
 </li>
+
 <li>
 <a class="fems" href="https://github.com/SimiPam"> 
 <img class="a" src="../images/GitHub-Mark.png" alt="github">
@@ -129,12 +142,10 @@ EvansHomePage
 </ul>
 
 
-</div>
 
-
+<div id="sit">
   <p >© 2016 Evans Brown.</p>
-  
-</div>
+  </div>
 </div>
 </div>
 </div>
