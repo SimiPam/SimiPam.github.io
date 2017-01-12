@@ -98,7 +98,7 @@ display: inline-block;
 a.mens {
    
 	text-decoration: none;
-	\
+	
     color: black;
     border: 2px black;
 	border-radius: 0;
@@ -152,7 +152,7 @@ li a {
 /*dropdown content*/
 .menucontent a {
     color: black;
-    padding: 25px 25px;
+    padding: 17px 17px;
     text-decoration: none;
     display: block;
     text-align: left;
