@@ -253,6 +253,7 @@ a.cons:hover  {
     [class*="col-"] {
         width: 100%;
 		padding-top:9px;
+	    padding-left:10px;
     }
 	
 	
