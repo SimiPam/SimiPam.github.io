@@ -274,7 +274,7 @@ input[type=reset]:hover
 	margin:0;
 	
 	width:100%;
-	overflow:hidden;
+	
 	
 }
 
@@ -383,8 +383,8 @@ left:0;
 /*map adjustments*/
 iframe
 {	
-	frameborder="0";
-	style="border:0";
+	
+	border:0;
 	width:80%;
 	height:auto;
 	float:left;
